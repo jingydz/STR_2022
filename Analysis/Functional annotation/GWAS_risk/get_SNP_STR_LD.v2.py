@@ -9,6 +9,25 @@ chrom=chr21
 python get_SNP_STR_LD.v2.py --pair gwas_snps.window250k_pSTRs.txt --chrom $chrom --snp SNPs/$chrom.raw --str STRs/$chrom.str_dosage.csv --output LD/$chrom
 '''
 
+#/home2/niuyw/project/STR/GWAS_risk/gwas_snps.window250k_pSTRs.txt
+#chr1    845016  845017  chr1    904654  904665
+#一共有5430618行。
+
+#/home2/niuyw/project/STR/GWAS_risk/SNPs/chr10.raw
+#FID IID PAT MAT SEX PHENOTYPE 10:272136:G:A_A
+#6594D 6594D 0 0 0 -9 0
+#一共有6487行。
+
+#/home2/niuyw/project/STR/GWAS_risk/STRs/chr10.str_dosage.csv
+#site,6594D,6605D,
+#chr10:84386,6,6,
+#一共有17398行。
+
+#/home2/niuyw/project/STR/GWAS_risk/LD/chr10.ld.txt
+#chr10   272135  272136  chr10   84386   84397   nan
+#chr10   272135  272136  chr10   95701   95716   0.0019868660459052686
+#一共有234339行。
+
 import sys
 import os
 import argparse
